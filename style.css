@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #07111f, #123456);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 92%;
+  max-width: 430px;
+  background: #14283d;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px #0008;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.card {
+  background: #203b52;
+  padding: 18px;
+  border-radius: 15px;
+  margin-top: 18px;
+}
+
+#myId {
+  background: #0b1724;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#copyBtn,
+#connectBtn {
+  background: #1976d2;
+  color: white;
+}
+
+.start {
+  background: #e53935;
+  color: white;
+  font-size: 22px;
+}
+
+.stop {
+  background: #455a64;
+  color: white;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+#connectionStatus {
+  color: #90caf9;
+}
+
+#alertBox {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #203b52;
+  font-weight: bold;
+}
+
+.alert-active {
+  background: #c62828 !important;
+  animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.4;
+  }
+}

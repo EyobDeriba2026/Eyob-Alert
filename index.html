@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyob Alert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🔔 Eyob Alert</h1>
+  <p>Call someone with an emergency alert</p>
+
+  <div class="card">
+    <h2>Your ID</h2>
+    <div id="myId">Creating ID...</div>
+    <button id="copyBtn">COPY ID</button>
+  </div>
+
+  <div class="card">
+    <h2>Call Someone</h2>
+
+    <input
+      id="friendId"
+      type="text"
+      placeholder="Enter person's ID"
+    >
+
+    <button id="connectBtn">
+      CONNECT
+    </button>
+
+    <p id="connectionStatus">Not connected</p>
+  </div>
+
+  <div class="buttons">
+    <button id="startBtn" class="start">
+      🚨 START
+    </button>
+
+    <button id="stopBtn" class="stop">
+      🛑 STOP
+    </button>
+  </div>
+
+  <div id="alertBox">
+    No active alert
+  </div>
+</div>
+
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
